@@ -1,0 +1,60 @@
+/* PHASE 1: Reset */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0px;
+  padding: 0 0 0 0;
+  border: 0;
+  outline: black;
+  font-family: inherit;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  // vertical-align:
+  box-sizing: inherit;
+  background: inherit; 
+}
+
+ol, ul {
+  // list-style:
+  list-style-type: none; 
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+
+
+.group:after {
+  // ...
+  content: "";
+  clear: both;
+  display: table;
+}
